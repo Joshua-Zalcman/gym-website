@@ -22,23 +22,124 @@
   </head>
   <body>
     <header>
-      <nav class="navbar">
-        <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="facilities">Facilites</a></li>
-          <li><a href="trainers">Personal Trainers</a></li>
-          <li><a href="classes">Classes</a></li>
-        </ul>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="ml-auto nav-item">
+                <a class="nav-link" aria-current="page" href="#memberships"
+                  >Memberships</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#facilities">Facilities</a>
+              </li>
+
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="#trainers"
+                  tabindex="-1"
+                  aria-disabled="true"
+                  >Trainers</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="#classes"
+                  tabindex="-1"
+                  aria-disabled="true"
+                  >Classes</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
       <h1>The Gym Name</h1>
     </header>
-    <main>
-      <div>
+    <main class="container-fluid">
+      <div
+        id="memberships"
+        class="
+          d-flex
+          flex-column
+          min-vh-100
+          justify-content-center
+          align-items-center
+        "
+      >
         <h2>Memberships</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex molestias
+          incidunt ab recusandae nobis! Ex eius expedita placeat eos fuga
+          aperiam ut totam error cumque temporibus harum, laboriosam rerum
+          consequuntur!
+        </p>
       </div>
-      <div><h2>Facilites</h2></div>
-      <div id="trainers"><h2>Trainers</h2></div>
-      <div id="classes"><h2>Classes</h2></div>
+      <div
+        id="facilities"
+        class="
+          d-flex
+          flex-column
+          min-vh-100
+          justify-content-center
+          align-items-center
+        "
+      >
+        <h2>Facilites</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex molestias
+          incidunt ab recusandae nobis! Ex eius expedita placeat eos fuga
+          aperiam ut totam error cumque temporibus harum, laboriosam rerum
+          consequuntur!
+        </p>
+      </div>
+      <div
+        class="
+          d-flex
+          flex-column
+          min-vh-100
+          justify-content-center
+          align-items-center
+          min-vh-100
+        "
+      >
+        <h2>Trainers</h2>
+        <div
+          id="trainers"
+          class="d-flex flex-wrap justify-content-around align-items-center"
+        ></div>
+      </div>
+      <div
+        class="
+          d-flex
+          flex-column
+          min-vh-100
+          justify-content-center
+          align-items-center
+          min-vh-100
+        "
+      >
+        <h2>Classes</h2>
+        <div
+          id="classes"
+          class="d-flex flex-wrap justify-content-around align-items-center"
+        ></div>
+      </div>
     </main>
     <footer>Footer</footer>
   </body>

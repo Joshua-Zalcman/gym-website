@@ -27,18 +27,20 @@ function getData(endpoint) {
 
 function renderTrainers() {
   let html = apiData.map((item) => {
-    return `<article><img src=${item.avatar}>
-    <h3>${item.name}</h3><p>${item.info}</p></article>`;
+    return `<article class="card m-2" style="width: 18rem;"><img src=${item.avatar} class="card-img-top"><div class="card-body">
+
+    <h3 class="card-title">${item.name}</h3><p class="card-text">${item.info}</p></div></article>`;
   });
-  $("#trainers").html(html);
+  $("#trainers").append(html);
 }
 
 function renderClasses() {
   let html = apiData.map((item) => {
-    return `<article><img src=${item.image}>
-    <h3>${item.title}</h3><p>${item.type}</p></article>`;
+    return `<article class="card m-1" style="width: 18rem;"><img src=${item.image} class="card-img-top"><div class="card-body">
+
+    <h3 class="card-title">${item.title}</h3><p class="card-text">${item.type}</p></div></article>`;
   });
-  $("#classes").html(html);
+  $("#classes").append(html);
 }
 
 getData(TRAINERS);
