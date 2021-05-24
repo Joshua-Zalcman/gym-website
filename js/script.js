@@ -46,7 +46,7 @@ function renderClasses() {
 }
 
 function toggleMenu() {
-  $navbarLinks.toggle();
+  $navbarLinks.toggle(500);
 }
 
 getData(TRAINERS);
