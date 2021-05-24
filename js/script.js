@@ -5,7 +5,9 @@ const CLASSES = "classes";
 /*----- app's state (variables) -----*/
 let apiData = null;
 /*----- cached element references -----*/
+const $navbarLinks = $("#navbarLinks");
 /*----- event listeners -----*/
+$(".navbar-toggler").on("click", toggleMenu);
 /*----- functions -----*/
 function getData(endpoint) {
   $.ajax({
@@ -36,11 +38,15 @@ function renderTrainers() {
 
 function renderClasses() {
   let html = apiData.map((item) => {
-    return `<article class="card m-1" style="width: 18rem;"><img src=${item.image} class="card-img-top"><div class="card-body">
+    return `<article class="card m-1 mw-75"><img src=${item.image} class="card-img-top"><div class="card-body">
 
     <h3 class="card-title">${item.title}</h3><p class="card-text">${item.type}</p></div></article>`;
   });
   $("#classes").append(html);
+}
+
+function toggleMenu() {
+  $navbarLinks.toggle();
 }
 
 getData(TRAINERS);
