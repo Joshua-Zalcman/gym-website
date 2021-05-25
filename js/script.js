@@ -8,6 +8,7 @@ let apiData = null;
 const $navbarLinks = $("#navbarLinks");
 /*----- event listeners -----*/
 $(".navbar-toggler").on("click", toggleMenu);
+$("#showMoreTrainers").on("click", showMoreTrainers);
 /*----- functions -----*/
 function getData(endpoint) {
   $.ajax({

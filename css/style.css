@@ -1,3 +1,21 @@
 html {
   scroll-behavior: smooth;
 }
+
+.membershipCard {
+  max-width: 30%;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.card {
+  max-width: 30%;
+}
+
+@media (max-width: 576px) {
+  .membershipCard {
+    max-width: 75%;
+  }
+  .card {
+    max-width: 75%;
+  }
+}
