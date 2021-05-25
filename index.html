@@ -32,18 +32,18 @@
           <div class="navbar-collapse collapse" id="navbarLinks">
             <ul class="navbar-nav mb-2 ms-auto mb-lg-0">
               <li class="nav-item">
+                <a class="nav-link" href="#facilities">Facilities</a>
+              </li>
+              <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="#memberships"
                   >Memberships</a
                 >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#facilities">Facilities</a>
               </li>
 
               <li class="nav-item">
                 <a
                   class="nav-link"
-                  href="#trainers"
+                  href="#trainers-section"
                   tabindex="-1"
                   aria-disabled="true"
                   >Trainers</a
@@ -52,7 +52,7 @@
               <li class="nav-item">
                 <a
                   class="nav-link"
-                  href="#classes"
+                  href="#classes-section"
                   tabindex="-1"
                   aria-disabled="true"
                   >Classes</a
@@ -68,67 +68,11 @@
         </div>
       </nav>
     </header>
-    <main class="container-fluid">
-      <div
-        id="memberships"
-        class="
-          d-flex
-          flex-column
-          min-vh-100
-          justify-content-center
-          align-items-center
-        "
-      >
-        <h1 class="display-2 mb-5">Memberships</h1>
-        <div
-          class="
-            d-flex
-            flex-sm-row flex-wrap flex-column
-            justify-content-around
-            align-items-center
-          "
-        >
-          <div class="membershipCard p-2 mb-2">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex
-              molestias incidunt ab recusandae nobis! Ex eius expedita placeat
-              eos fuga aperiam ut totam error cumque temporibus harum,
-              laboriosam rerum consequuntur!
-            </p>
-            <div class="d-flex justify-content-around align-items-center">
-              <h6>$109/month</h6>
-              <button class="btn btn-success">More Info</button>
-            </div>
-          </div>
-          <div class="membershipCard p-2 mb-2">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex
-              molestias incidunt ab recusandae nobis! Ex eius expedita placeat
-              eos fuga aperiam ut totam error cumque temporibus harum,
-              laboriosam rerum consequuntur!
-            </p>
-            <div class="d-flex justify-content-around align-items-center">
-              <h6>$109/month</h6>
-              <button class="btn btn-success">More Info</button>
-            </div>
-          </div>
-          <div class="membershipCard p-2 mb-2">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex
-              molestias incidunt ab recusandae nobis! Ex eius expedita placeat
-              eos fuga aperiam ut totam error cumque temporibus harum,
-              laboriosam rerum consequuntur!
-            </p>
-            <div class="d-flex justify-content-around align-items-center">
-              <h6>$109/month</h6>
-              <button class="btn btn-success">More Info</button>
-            </div>
-          </div>
-        </div>
-      </div>
+    <main>
       <div
         id="facilities"
         class="
+          container-fluid
           d-flex
           flex-column
           min-vh-100
@@ -137,62 +81,7 @@
         "
       >
         <h1 class="display-2 mb-5">Facilities</h1>
-        <div
-          id="carouselExampleIndicators"
-          class="carousel slide"
-          data-ride="carousel"
-        >
-          <ol class="carousel-indicators">
-            <li
-              data-target="#carouselExampleIndicators"
-              data-slide-to="0"
-              class="active"
-            ></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-          </ol>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img
-                src="https://images.unsplash.com/photo-1540497077202-7c8a3999166f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
-                class="d-block w-100"
-                alt="weights"
-              />
-            </div>
-            <div class="carousel-item">
-              <img
-                src="https://images.unsplash.com/photo-1588286840104-8957b019727f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
-                class="d-block w-100"
-                alt="yoga"
-              />
-            </div>
-            <div class="carousel-item">
-              <img
-                src="https://images.unsplash.com/photo-1540496905036-5937c10647cc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1050&q=80"
-                class="d-block w-100"
-                alt="bikes"
-              />
-            </div>
-          </div>
-          <a
-            class="carousel-control-prev"
-            href="#carouselExampleIndicators"
-            role="button"
-            data-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a
-            class="carousel-control-next"
-            href="#carouselExampleIndicators"
-            role="button"
-            data-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
-        </div>
+
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex molestias
           incidunt ab recusandae nobis! Ex eius expedita placeat eos fuga
@@ -215,32 +104,86 @@
         </div>
       </div>
       <div
+        id="memberships"
         class="
           d-flex
           flex-column
           min-vh-100
           justify-content-center
           align-items-center
+        "
+      >
+        <h1 class="display-2 mb-5">Membership Options</h1>
+        <div
+          class="
+            d-flex
+            flex-sm-row flex-wrap flex-column
+            justify-content-around
+            align-items-center
+          "
+        >
+          <div class="membershipCard mb-2">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex
+              molestias incidunt ab recusandae nobis! Ex eius expedita placeat
+              eos fuga aperiam ut totam error cumque temporibus harum,
+              laboriosam rerum consequuntur!
+            </p>
+
+            <h6>$109/month</h6>
+            <button class="btn w-100">More Info</button>
+          </div>
+          <div class="membershipCard mb-2">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex
+              molestias incidunt ab recusandae nobis! Ex eius expedita placeat
+              eos fuga aperiam ut totam error cumque temporibus harum,
+              laboriosam rerum consequuntur!
+            </p>
+
+            <h6>$109/month</h6>
+            <button class="btn w-100">More Info</button>
+          </div>
+          <div class="membershipCard mb-2">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex
+              molestias incidunt ab recusandae nobis! Ex eius expedita placeat
+              eos fuga aperiam ut totam error cumque temporibus harum,
+              laboriosam rerum consequuntur!
+            </p>
+
+            <h6>$109/month</h6>
+            <button class="btn w-100">More Info</button>
+          </div>
+        </div>
+      </div>
+
+      <div
+        id="trainers-section"
+        class="
+          d-flex
+          container-fluid
+          flex-column
+          justify-content-center
+          align-items-center
           min-vh-100
         "
       >
-        <h1 class="display-2 mb-5">Trainers</h1>
+        <h1 class="display-2 mb-5">Personal Trainers</h1>
         <div
           id="trainers"
           class="d-flex flex-wrap justify-content-around align-items-center"
         ></div>
-        <button
-          id="showMoreTrainers"
-          type="button"
-          class="btn btn-lg btn-success w-100"
-        >
+        <button id="showMoreTrainers" type="button" class="btn btn-lg w-100">
           Show More
         </button>
       </div>
       <div
+        id="classes-section"
         class="
           d-flex
           flex-column
+          container-fluid
           min-vh-100
           justify-content-center
           align-items-center
