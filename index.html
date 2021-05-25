@@ -23,8 +23,8 @@
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
-        <div class="container-fluid">
+      <nav class="navbar navbar-expand-md fixed-top">
+        <div class="container">
           <a class="navbar-brand" href="#">Gym Logo</a>
           <button class="navbar-toggler" type="button">
             <span class="navbar-toggler-icon"></span>
@@ -70,6 +70,26 @@
     </header>
     <main>
       <div
+        id="hero"
+        class="
+          d-flex
+          flex-column
+          min-vh-100
+          justify-content-center
+          align-items-center
+        "
+      >
+        <div class="jumbotron w-75">
+          <h1 class="display-4">Gym Logo!</h1>
+          <p class="lead">
+            This is a simple hero unit, a simple jumbotron-style component for
+            calling extra attention to featured content or information.
+          </p>
+
+          <a class="btn btn-lg" href="#" role="button">Learn more</a>
+        </div>
+      </div>
+      <div
         id="facilities"
         class="
           container-fluid
@@ -80,7 +100,7 @@
           align-items-center
         "
       >
-        <h1 class="display-2 mb-5">Facilities</h1>
+        <h1 class="display-2 my-5">Facilities</h1>
 
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex molestias
@@ -113,7 +133,7 @@
           align-items-center
         "
       >
-        <h1 class="display-2 mb-5">Membership Options</h1>
+        <h1 class="display-2 my-5">Membership Options</h1>
         <div
           class="
             d-flex
@@ -169,7 +189,7 @@
           min-vh-100
         "
       >
-        <h1 class="display-2 mb-5">Personal Trainers</h1>
+        <h1 class="display-2 my-5">Personal Trainers</h1>
         <div
           id="trainers"
           class="d-flex flex-wrap justify-content-around align-items-center"
@@ -183,20 +203,25 @@
         class="
           d-flex
           flex-column
-          container-fluid
           min-vh-100
           justify-content-center
           align-items-center
           min-vh-100
         "
       >
-        <h1 class="display-2 mb-5">Classes</h1>
+        <h1 class="display-2 my-5">Classes</h1>
         <div
           id="classes"
-          class="d-flex flex-wrap justify-content-around align-items-center"
+          class="
+            d-flex
+            container-fluid
+            flex-sm-row flex-column flex-wrap
+            justify-content-between
+            align-items-center
+          "
         ></div>
       </div>
     </main>
-    <footer>Footer</footer>
+    <footer id="footer">Footer</footer>
   </body>
 </html>

@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Squada+One&display=swap");
 :root {
   /* white text */
 
@@ -8,6 +9,10 @@
   --secondary-light: #c7a4ff;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -15,10 +20,35 @@ html {
 body {
   background-color: black;
   color: white;
+  font-family: "Squada One";
 }
 
-.btn {
+.navbar {
   background-color: var(--secondary-color);
+  color: white;
+}
+
+.navbar a {
+  color: rgb(55, 55, 55);
+}
+.navbar-toggler-icon {
+  color: rgb(55, 55, 55);
+}
+.nav-link:hover {
+  color: white;
+}
+.nav-item:hover {
+  border-bottom: 2px solid var(--secondary-dark);
+}
+.btn {
+  background-color: var(--secondary-dark);
+  color: white;
+}
+
+#hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80");
+  background-size: cover;
 }
 
 #memberships {
@@ -40,13 +70,31 @@ body {
 }
 .card {
   max-width: 30%;
+  background-color: rgb(55, 55, 55);
+  border: none;
 }
-
+.card a {
+  color: var(--secondary-light);
+  text-decoration: none;
+}
+.class {
+  min-width: 30%;
+  min-height: 350px;
+  background-size: cover;
+}
+#footer {
+  margin-top: 5px;
+  width: 100%;
+  background-color: rgb(55, 55, 55);
+}
 @media (max-width: 576px) {
   .membershipCard {
     max-width: 75%;
   }
   .card {
-    max-width: 75%;
+    min-width: 60%;
+  }
+  .class {
+    min-width: 80%;
   }
 }
