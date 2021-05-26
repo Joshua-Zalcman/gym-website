@@ -12,6 +12,13 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <script
       src="https://code.jquery.com/jquery-3.6.0.min.js"
       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
@@ -41,27 +48,13 @@
               </li>
 
               <li class="nav-item">
-                <a
-                  class="nav-link"
-                  href="#trainers-section"
-                  tabindex="-1"
-                  aria-disabled="true"
-                  >Trainers</a
-                >
+                <a class="nav-link" href="#trainers-section">Trainers</a>
               </li>
               <li class="nav-item">
-                <a
-                  class="nav-link"
-                  href="#classes-section"
-                  tabindex="-1"
-                  aria-disabled="true"
-                  >Classes</a
-                >
+                <a class="nav-link" href="#classes-section">Classes</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#" tabindex="-1" aria-disabled="true"
-                  >Contact</a
-                >
+                <a class="nav-link" href="#">Contact</a>
               </li>
             </ul>
           </div>
@@ -82,11 +75,12 @@
         <div class="jumbotron w-75">
           <h1 class="display-4">Gym Logo!</h1>
           <p class="lead">
-            This is a simple hero unit, a simple jumbotron-style component for
-            calling extra attention to featured content or information.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex
+            molestias incidunt ab recusandae nobis! Ex eius expedita placeat eos
+            fuga
           </p>
 
-          <a class="btn btn-lg" href="#" role="button">Learn more</a>
+          <a class="btn btn-lg ml-auto" href="#" role="button">Sign Up Now</a>
         </div>
       </div>
       <div
@@ -106,7 +100,9 @@
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex molestias
           incidunt ab recusandae nobis! Ex eius expedita placeat eos fuga
           aperiam ut totam error cumque temporibus harum, laboriosam rerum
-          consequuntur!
+          consequuntur! incidunt ab recusandae nobis! Ex eius expedita placeat
+          eos fuga aperiam ut totam error cumque temporibus harum, laboriosam
+          rerum consequuntur! <a href="/">Photo Gallery</a>
         </p>
         <div
           class="w-100 d-flex flex-column flex-sm-row justify-content-around"
@@ -139,7 +135,7 @@
             d-flex
             flex-sm-row flex-wrap flex-column
             justify-content-around
-            align-items-center
+            align-content-center
           "
         >
           <div class="membershipCard mb-2">
@@ -150,7 +146,7 @@
               laboriosam rerum consequuntur!
             </p>
 
-            <h6>$109/month</h6>
+            <h6>$129/month</h6>
             <button class="btn w-100">More Info</button>
           </div>
           <div class="membershipCard mb-2">
@@ -161,7 +157,7 @@
               laboriosam rerum consequuntur!
             </p>
 
-            <h6>$109/month</h6>
+            <h6>$104/month</h6>
             <button class="btn w-100">More Info</button>
           </div>
           <div class="membershipCard mb-2">
@@ -172,7 +168,7 @@
               laboriosam rerum consequuntur!
             </p>
 
-            <h6>$109/month</h6>
+            <h6>$99/month</h6>
             <button class="btn w-100">More Info</button>
           </div>
         </div>
@@ -192,7 +188,13 @@
         <h1 class="display-2 my-5">Personal Trainers</h1>
         <div
           id="trainers"
-          class="d-flex flex-wrap justify-content-around align-items-center"
+          class="
+            d-flex
+            w-100
+            flex-wrap
+            justify-content-around
+            align-items-center
+          "
         ></div>
         <button id="showMoreTrainers" type="button" class="btn btn-lg w-100">
           Show More
@@ -222,6 +224,26 @@
         ></div>
       </div>
     </main>
-    <footer id="footer">Footer</footer>
+    <footer id="footer">
+      <div class="my-4">
+        <h6 class="display-6 text-center my-3 py-3">Gym Logo</h6>
+        <ul class="d-flex flex-column flex-sm-row justify-content-around">
+          <li><a href="/">About</a></li>
+          <li><a href="/">Rules and Regulations</a></li>
+          <li><a href="/">Membership Details</a></li>
+          <li><a href="/">Location</a></li>
+          <li><a href="/">Contact Us</a></li>
+        </ul>
+      </div>
+      <div
+        id="social-media"
+        class="d-flex flex-row justify-content-center align-content-center"
+      >
+        <p class="mx-2">Social Media:</p>
+        <a href="/" class="mx-2"><i class="fab fa-facebook-square"></i></a>
+        <a href="/" class="mx-2"><i class="fab fa-instagram-square"></i></a>
+        <a href="/" class="mx-2"><i class="fab fa-twitter-square"></i></a>
+      </div>
+    </footer>
   </body>
 </html>
