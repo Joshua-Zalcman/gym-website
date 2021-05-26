@@ -74,6 +74,10 @@ body {
   padding: 30px;
   border-radius: 5px;
 }
+#facilities a {
+  color: var(--secondary-color);
+  text-decoration: none;
+}
 .card {
   min-width: 25%;
   background-color: rgb(55, 55, 55);
@@ -83,18 +87,25 @@ body {
   color: var(--secondary-light);
   text-decoration: none;
 }
+
+.class-container {
+  width: 30%;
+  min-height: 350px;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 10px;
+}
 .class {
-  min-width: 30%;
+  width: 100%;
   min-height: 350px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  transform: all 1s;
+  transition: transform 250ms ease-in;
   overflow: hidden;
 }
 .class:hover {
-  transform: scale(1.05);
-  border: 1px solid var(--secondary-dark);
+  transform: scale(1.02);
 }
 
 #footer {
@@ -127,7 +138,7 @@ body {
   .card {
     min-width: 60%;
   }
-  .class {
+  .class-container {
     min-width: 80%;
   }
 }

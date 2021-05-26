@@ -49,8 +49,8 @@ function renderTrainers() {
 
 function renderClasses() {
   let html = apiData.map((item) => {
-    return `<div class="class w-100 h-100  d-flex flex-column justify-content-between p-2 mt-2 " style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(${item.image}); max-width: 30%;"> 
-    <h4 class="display-4 text-wrap">${item.title}</h4><button class="btn w-50 " style="margin-left: auto">Sign Up</button></div>`;
+    return `<div class="class-container"><div class="class   d-flex flex-column justify-content-between p-2  " style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(${item.image}); "> 
+    <h4 class="display-4 text-wrap">${item.title}</h4><button class="btn w-50 " style="margin-left: auto">Sign Up</button></div></div>`;
   });
   $("#classes").append(html);
 }
