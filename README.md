@@ -9,6 +9,7 @@ A simple website for a gym client
 - [Bootstrap](https://getbootstrap.com/)
 - JavaScript/jQuery
 - [mockAPI.io](https://mockapi.io/)
+- [Font-Awesome](https://fontawesome.com)
 
 ## Screenshots
 
@@ -17,6 +18,8 @@ A simple website for a gym client
 ![wireframe](img/wireframe.png)
 
 ### Images of App
+
+## Getting Started
 
 Click here to visit working App
 
