@@ -5,12 +5,14 @@ const CLASSES = "classes";
 /*----- app's state (variables) -----*/
 let apiData = null;
 let showMore = false;
+let menuOpen = false;
 /*----- cached element references -----*/
 const $navbarLinks = $("#navbarLinks");
 
 /*----- event listeners -----*/
 $(".navbar-toggler").on("click", toggleMenu);
 $("#showMoreTrainers").on("click", showMoreTrainers);
+$("main").on("click", hideMenu);
 /*----- functions -----*/
 function getData(endpoint) {
   $.ajax({
@@ -47,7 +49,7 @@ function renderTrainers() {
 
 function renderClasses() {
   let html = apiData.map((item) => {
-    return `<div class="class  d-flex flex-column justify-content-between p-2 mt-2 " style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(${item.image}); max-width: 30%;"> 
+    return `<div class="class w-100 h-100  d-flex flex-column justify-content-between p-2 mt-2 " style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(${item.image}); max-width: 30%;"> 
     <h4 class="display-4 text-wrap">${item.title}</h4><button class="btn w-50 " style="margin-left: auto">Sign Up</button></div>`;
   });
   $("#classes").append(html);
@@ -55,6 +57,13 @@ function renderClasses() {
 
 function toggleMenu() {
   $navbarLinks.toggle(500);
+  menuOpen = !menuOpen;
+}
+
+function hideMenu() {
+  if (menuOpen) {
+    toggleMenu();
+  }
 }
 
 function showMoreTrainers() {
