@@ -29,7 +29,7 @@ Mobile view:
 
 ## Getting Started
 
-Click here to visit working App
+Click [here](https://mock-api-gym-website.netlify.app/) to visit working App
 
 ## Future Enhancements
 
