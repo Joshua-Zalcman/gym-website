@@ -19,13 +19,13 @@ A simple website for a gym client
 
 ### Images of App
 
+Desktop view:
+
 ![wireframe](img/website_img_1.png)
 
-Desktop view
+Mobile view:
 
 ![wireframe](img/website_img_2.png)
-
-Mobile view
 
 ## Getting Started
 
