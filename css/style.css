@@ -1,12 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Squada+One&display=swap");
+
+/* color scheme */
 :root {
   /* white text */
-
   --secondary-dark: #65499c;
   /* black text */
 
   --secondary-color: #9575cd;
-  --secondary-light: #c7a4ff;
+  --secondary-light: #d2b7fc;
 }
 
 * {
@@ -23,6 +24,17 @@ body {
   font-family: "Squada One";
 }
 
+/* utils */
+.btn {
+  background-color: var(--secondary-color);
+  color: white;
+}
+
+.display-2 {
+  color: var(--secondary-light);
+}
+/* header */
+
 .navbar {
   background-color: var(--secondary-dark);
 }
@@ -30,11 +42,17 @@ body {
 .navbar a {
   color: var(--secondary-light);
 }
+
 .navbar-toggler {
   color: var(--secondary-light);
 }
+
 .navbar-toggler i {
   color: var(--secondary-light);
+}
+
+.nav-link {
+  font-size: 20px;
 }
 
 .nav-link:hover {
@@ -43,10 +61,7 @@ body {
   text-underline-offset: 15px;
 }
 
-.btn {
-  background-color: var(--secondary-color);
-  color: white;
-}
+/* main */
 
 #hero {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
@@ -64,20 +79,18 @@ body {
   background-color: rgba(0, 0, 0, 0.6);
 }
 
-.display-2 {
-  color: var(--secondary-light);
-}
-
 .membershipCard {
   background-color: rgba(0, 0, 0, 0.6);
   max-width: 30%;
   padding: 30px;
   border-radius: 5px;
 }
+
 #facilities a {
   color: var(--secondary-color);
   text-decoration: none;
 }
+
 .card {
   min-width: 25%;
   background-color: rgb(55, 55, 55);
@@ -95,6 +108,7 @@ body {
   position: relative;
   margin-bottom: 10px;
 }
+
 .class {
   width: 100%;
   min-height: 350px;
@@ -104,9 +118,12 @@ body {
   transition: transform 250ms ease-in;
   overflow: hidden;
 }
+
 .class:hover {
   transform: scale(1.02);
 }
+
+/* footer */
 
 #footer {
   margin-top: 5px;
@@ -130,6 +147,8 @@ body {
 #footer i {
   font-size: 25px;
 }
+
+/* media queries */
 
 @media (max-width: 576px) {
   .membershipCard {
