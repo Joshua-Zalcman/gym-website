@@ -20,10 +20,12 @@ A simple website for a gym client
 ### Images of App
 
 ![wireframe](img/website_img_1.png)
-desktop view
+
+Desktop view
 
 ![wireframe](img/website_img_2.png)
-mobile view
+
+Mobile view
 
 ## Getting Started
 
